@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Angel Javier</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Angel Martinez</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li class="nav-item"><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+                <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="#certificados" class="nav-link">Certificados</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="theme-switcher">
+                <label for="theme-toggle" class="switch-label">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Hola, soy Angel Martinez</h1>
+                <p>Desarrollador Web Creativo y Apasionado</p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn">Ver Mis Proyectos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="about">
+            <div class="about-container">
+                <div class="about-photo-container">
+                    <img src="foto/yo.png" alt="Una foto mia" class="about-photo">
+                </div>
+                <div class="about-text">
+                    <h2>Sobre Mí</h2>
+                    <p>
+                        Soy una persona apasionada por la tecnología y el desarrollo web, especialmente el front-end.
+                        Me gusta resolver problemas, mejorar mis habilidades cada día y construir proyectos que ofrezcan una experiencia de usuario clara y agradable. Mi meta es seguir creciendo en el mundo del desarrollo y consolidarme como profesional en el área.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="technologies">
+            <h2>Tecnologías</h2>
+            <div class="tech-grid">
+                <div class="tech-item" title="HTML5">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="64" height="64" alt="HTML5">
+                    <span>HTML</span>
+                </div>
+                <div class="tech-item" title="CSS3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="64" height="64" alt="CSS3">
+                    <span>CSS</span>
+                </div>
+                <div class="tech-item" title="JavaScript">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="64" height="64" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item" title="Bootstrap">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" width="64" height="64" alt="Bootstrap">
+                    <span>Bootstrap</span>
+                </div>
+                <div class="tech-item" title="Git">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="64" height="64" alt="Git">
+                    <span>Git</span>
+                </div>
+                <div class="tech-item" title="GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="64" height="64" alt="GitHub">
+                    <span>GitHub</span>
+                </div>
+                <div class="tech-item" title="Python">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="64" height="64" alt="Python">
+                    <span>Python</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects">
+            <h2>Mis Proyectos</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://www.mardedulces.com/img/bolsitas/bolsita-50-dulces.png" alt="E-commerce de Dulces">
+                    <div class="project-content">
+                        <h3>E-commerce de Dulces</h3>
+                        <p>Plataforma de comercio electrónico para una tienda de dulces, con carrito de compras.</p>
+                        <div class="project-links">
+                            <a href="https://leafy-baklava-6ce24d.netlify.app/" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                            <a href="https://github.com/angelmtz13/dulceria" class="github-link" aria-label="GitHub repository" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCm8NEb2QPCdeJoDCwlWoUAvGDdQB1g5T8ZQ&s" alt="API de Clima">
+                    <div class="project-content">
+                        <h3>App de Clima</h3>
+                        <p>Aplicación que consume una API para mostrar el pronóstico del tiempo en tiempo real de cualquier ciudad.</p>
+                        <div class="project-links">
+                            <a href="https://superb-cuchufli-011c44.netlify.app/" target="_blank" class="btn-secondary">Ver Demo</a>
+                            <a href="https://github.com/angelmtz13/clima.git" target="_blank" class="github-link" aria-label="GitHub repository">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs6OlBYmnQlqzhdsEgB1MsSPF-8p0V9VL3gw&s" alt="API de Criptomonedas">
+                    <div class="project-content">
+                        <h3>Dashboard de Criptos</h3>
+                        <p>Panel que muestra precios y fluctuaciones de las criptomonedas más populares utilizando una API en vivo.</p>
+                        <div class="project-links">
+                            <a href="https://idyllic-sunflower-27fd20.netlify.app/" class="btn-secondary">Ver Demo</a>
+                            <a href="https://github.com/angelmtz13/api-crip.git" class="github-link" aria-label="GitHub repository">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://racc.mx/uam/icpc-uam-azcapotzalco/acm-uam/piedra-papel-tijeras/ppt.png" alt="Juego Piedra, Papel o Tijeras">
+                    <div class="project-content">
+                        <h3>Juego: Piedra, Papel o Tijeras</h3>
+                        <p>Clásico juego interactivo desarrollado con lógica de JavaScript pura para practicar el manejo de eventos y estado.</p>
+                        <div class="project-links">
+                            <a href="https://exquisite-heliotrope-a94bb7.netlify.app/" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                            <a href="https://github.com/angelmtz13/ppt" class="github-link" aria-label="GitHub repository" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://preview.redd.it/must-watch-tv-shows-my-top-20-v0-kg2bb8ecs0v91.png?auto=webp&s=cc652fd84a20dcd469eb3ed8fa05c79861af271a" alt="Buscador de Series de TV">
+                    <div class="project-content">
+                        <h3>Buscador de Series de TV</h3>
+                        <p>Aplicación para buscar series consumiendo la API de TVMaze, con async/await y manipulación del DOM, además utilizando Boostrap.</p>
+                        <div class="project-links">
+                            <a href="https://amazing-monstera-b68ba5.netlify.app/" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                            <a href="https://github.com/angelmtz13/pelis" class="github-link" aria-label="GitHub repository" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3G3l6_NIrJ0GdIm1TMu7M22Y64a-4Mw-alg&s" alt="Portafolio Personal">
+                    <div class="project-content">
+                        <h3>Mi Portafolio Personal</h3>
+                        <p>El portafolio que estás viendo. Diseñado para mostrar mis proyectos, tecnologías y certificados de manera clara y profesional.</p>
+                        <div class="project-links">
+                            <a href="" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                            <a href="" class="github-link" aria-label="GitHub repository" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="certificados" class="projects">
+            <h2>Mis Certificados</h2>
+            <div class="certificate-grid">
+                <div class="certificate-card">
+                    <div class="project-content">
+                        <h3>Desarrollador Front-end</h3>
+                        <p>Emitido por: <strong>Fundación Carlos Slim</strong></p>
+                        <div class="project-links">
+                            <a href="Certificados/capacitate-front.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="project-content">
+                        <h3>Desarrollo Front End de cero a pro</h3>
+                        <p>Emitido por: <strong>EBAC</strong></p>
+                        <div class="project-links">
+                            <a href="Certificados/ebac-front.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="project-content">
+                        <h3>Sitios Web Responsivos</h3>
+                        <p>Emitido por: <strong>Fundación Carlos Slim</strong></p>
+                        <div class="project-links">
+                            <a href="Certificados/responsivo-cap.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="project-content">
+                        <h3>Control de Versiones</h3>
+                        <p>Emitido por: <strong>Fundación Carlos Slim</strong></p>
+                        <div class="project-links">
+                            <a href="Certificados/version-controles.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Interesado en colaborar? ¡Envíame un mensaje!</p>
+            <form class="contact-form" action="https://formspree.io/f/mrbyaqkn" method="POST">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <ul class="nav-menu">
+                <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li class="nav-item"><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+                <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="#certificados" class="nav-link">Certificados</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
