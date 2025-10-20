@@ -12,7 +12,7 @@
     --header-bg-dark: rgba(17, 34, 64, 0.85);
     --primary-color-dark: #fd7e14;
     --primary-hover-dark: #ff9a4a;
-    
+
     --bg-color: var(--bg-color-light);
     --text-color: var(--text-color-light);
     --card-bg: var(--card-bg-light);
@@ -45,10 +45,6 @@ html {
     scroll-behavior: smooth;
 }
 
-section[id] {
-    scroll-margin-top: 80px;
-}
-
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -65,7 +61,6 @@ img {
     background-color: var(--header-bg);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -94,6 +89,7 @@ img {
     margin: 0;
     padding: 0;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -154,10 +150,6 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(24px);
-}
-
-main {
-    padding-top: 70px;
 }
 
 section {
@@ -347,7 +339,7 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
 
 .project-links {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     margin-top: auto;
 }
@@ -358,7 +350,6 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
     color: var(--primary-color);
     font-size: 0.9rem;
     font-weight: 500;
-    justify-self: flex-start; 
 }
 
 .project-links .btn-secondary:hover {
@@ -378,12 +369,11 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
     transform: scale(1.1);
 }
 
-/* --- SECCIÓN DE CERTIFICADOS --- */
 .certificate-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    text-align: left;
 }
 
 .certificate-card {
@@ -394,8 +384,8 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
     display: flex;
     flex-direction: column;
     border: 1px solid transparent;
-    justify-content: center; /* Centra el contenido verticalmente */
-    min-height: 180px; /* Le da una altura mínima para que no se vean muy pequeñas */
+    justify-content: center;
+    min-height: 180px;
 }
 
 .certificate-card:hover {
@@ -412,29 +402,12 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-    
-    .about-photo {
-        width: 220px;
-        height: 220px;
-    }
-    
-    .certificate-grid {
-      grid-template-columns: 1fr;
-    }
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 700px; 
-    margin: 30px auto 0 auto; 
+    max-width: 700px;
+    margin: 30px auto 0 auto;
     text-align: left;
 }
 
@@ -446,23 +419,132 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
     font-size: 1rem;
     color: var(--text-color);
     background-color: var(--card-bg);
-    border: 2px solid rgba(128, 128, 128, 0.2); /* Borde sutil */
+    border: 2px solid rgba(128, 128, 128, 0.2);
     border-radius: 8px;
     transition: border-color var(--transition-speed);
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    box-sizing: border-box;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: var(--primary-color); /* Resalta el campo al hacer foco */
+    border-color: var(--primary-color);
 }
 
 .contact-form textarea {
-    resize: vertical; /* Permite al usuario cambiar la altura del área de texto */
+    resize: vertical;
 }
 
 .contact-form button {
-    align-self: flex-start; /* Alinea el botón a la izquierda */
+    align-self: flex-start;
     cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        gap: 15px;
+    }
+    .nav-menu {
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+        order: 3;
+    }
+    .nav-logo {
+        order: 1;
+    }
+    .theme-switcher {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    section { padding: 30px 20px; }
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .btn, .btn-secondary {
+        width: 80%;
+        max-width: 320px;
+        text-align: center;
+    }
+    .about {
+        padding: 30px;
+    }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .about-photo {
+        width: 220px;
+        height: 220px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-form button {
+        align-self: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px;
+        justify-content: space-between;
+    }
+    .nav-menu {
+        gap: 15px;
+    }
+    .nav-link {
+        font-size: 0.9rem;
+    }
+    h1 { font-size: 2.1rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+    section { padding: 25px 15px; }
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .btn, .btn-secondary {
+        width: 100%;
+        max-width: none;
+    }
+    .about {
+        padding: 25px;
+    }
+    .about-photo {
+        width: 180px;
+        height: 180px;
+    }
+    .about p {
+        font-size: 1rem;
+    }
+    .project-content {
+        padding: 20px;
+    }
+    .tech-grid {
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
 }
