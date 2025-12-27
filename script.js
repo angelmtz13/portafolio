@@ -37,13 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { Accept: "application/json" },
                 });
                 if (response.ok) {
-                    alert("✅ ¡Tu mensaje se envió correctamente!");
+                    alert("¡Tu mensaje se envió correctamente!");
                     form.reset();
                 } else {
                     alert("⚠️ Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.");
                 }
             } catch (error) {
-                alert("❌ Error de conexión. Intenta más tarde.");
+                alert("Error de conexión. Intenta más tarde.");
             }
         });
     }
