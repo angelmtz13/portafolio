@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     alert("¡Tu mensaje se envió correctamente!");
                     form.reset();
                 } else {
-                    alert("⚠️ Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.");
+                    alert("Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.");
                 }
             } catch (error) {
                 alert("Error de conexión. Intenta más tarde.");
