@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Angel Martinez</title>
+    <meta name="description" content="Portafolio profesional de Angel Martinez, Desarrollador Frontend Jr. Conoce mis proyectos y tecnologías." id="meta-description">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -13,18 +14,26 @@
         <nav class="navbar">
             <a href="#" class="nav-logo">Angel Martinez</a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#sobre-mi" class="nav-link">Perfil</a></li>
-                <li class="nav-item"><a href="#tecnologias" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                <li class="nav-item"><a href="#certificados" class="nav-link">Certificados</a></li>
-                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="#inicio" class="nav-link" data-i18n="nav-home">Inicio</a></li>
+                <li class="nav-item"><a href="#sobre-mi" class="nav-link" data-i18n="nav-profile">Perfil</a></li>
+                <li class="nav-item"><a href="#tecnologias" class="nav-link" data-i18n="nav-skills">Skills</a></li>
+                <li class="nav-item"><a href="#proyectos" class="nav-link" data-i18n="nav-projects">Proyectos</a></li>
+                <li class="nav-item"><a href="#certificados" class="nav-link" data-i18n="nav-certificates">Certificados</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link" data-i18n="nav-contact">Contacto</a></li>
             </ul>
-            <div class="theme-switcher">
-                <label for="theme-toggle" class="switch-label">
-                    <input type="checkbox" id="theme-toggle">
-                    <span class="slider"></span>
-                </label>
+            <div class="nav-controls">
+                <button id="lang-toggle" class="lang-btn" aria-label="Cambiar idioma">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="lang-icon" viewBox="0 0 16 16">
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.424-1.248 1.16-1.64 2.124H7.5zM11.64 3.201a7.9 7.9 0 0 1 1.625 2.124H10.15c-.17-.96-.44-1.748-.716-2.124m.437 3.123h3.585a7.2 7.2 0 0 1 0 2H12.08a7.2 7.2 0 0 1 0-2m-.07 3h3.29a7.2 7.2 0 0 1-1.625 2.124c-.276-.376-.546-1.164-.716-2.124zm-1.865 3.124c-.392.964-.97 1.7-1.64 2.124V10.8zM7.5 14.923c-.67-.424-1.248-1.16-1.64-2.124H7.5zM6.36 12.8c-.276-.376-.546-1.164-.716-2.124h3.712c-.17.96-.44 1.748-.716 2.124m-1.865-3.124H.872a7.2 7.2 0 0 1 0-2h3.585a7.2 7.2 0 0 1 0 2m-.07-3H1.085a7.2 7.2 0 0 1 1.625-2.124c.276.376.546 1.164.716 2.124m.997-3.124c.392-.964.97-1.7 1.64-2.124v3.124z"/>
+                    </svg>
+                    <span id="lang-text">EN</span>
+                </button>
+                <div class="theme-switcher">
+                    <label for="theme-toggle" class="switch-label">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
             </div>
         </nav>
     </header>
@@ -32,11 +41,11 @@
     <main>
         <section id="inicio" class="hero">
             <div class="hero-content">
-                <h1>Hola, soy Angel Martinez</h1>
-                <p>Frontend Developer Jr | JavaScript • HTML • CSS</p>
+                <h1 data-i18n="hero-title">Hola, soy Angel Martinez</h1>
+                <p data-i18n="hero-subtitle">Frontend Developer Jr | JavaScript • HTML • CSS</p>
                 <div class="hero-buttons">
-                    <a href="#proyectos" class="btn">Ver Portafolio</a>
-                    <a href="#contacto" class="btn">Contáctame</a>
+                    <a href="#proyectos" class="btn" data-i18n="btn-portfolio">Ver Portafolio</a>
+                    <a href="#contacto" class="btn" data-i18n="btn-contact-me">Contáctame</a>
                 </div>
             </div>
         </section>
@@ -44,22 +53,22 @@
         <section id="sobre-mi" class="about">
             <div class="about-container">
                 <div class="about-photo-container">
-                    <img src="foto/yo.png" alt="Foto de Angel Martinez" class="about-photo">
+                    <img src="foto/yo.png" alt="Foto de Angel Martinez" class="about-photo" data-i18n-alt="about-photo-alt">
                 </div>
                 <div class="about-text">
-                    <h2>Perfil Profesional</h2>
-                    <p>
+                    <h2 data-i18n="about-title">Perfil Profesional</h2>
+                    <p data-i18n="about-text-1">
                         Soy estudiante de Ingeniería Informática con un interés en el desarrollo Front-End. Me gusta crear interfaces que no solo se vean bien, sino que también sean fáciles de usar.
                     </p>
-                    <p>
-                        Tengo conocimientos prácticos en HTML5, CSS3 y JavaScript, y he trabajado en proyectos personales donde aplico lógica y consumo de APIs. Me siento cómodo utilizando Git para el control de versiones y siempre busco mejorar mis habilidades técnicas para aportar soluciones útiles. Cuento con nivel de inglés B2 certificado, con capacidad para leer documentación técnica y comunicarme en entornos de trabajo internacionales.
+                    <p data-i18n="about-text-2">
+                        Tengo conocimientos prácticos en HTML5, CSS3 y JavaScript, y he trabajado en proyectos personales donde aplico lógica y consumo de APIs. Me siento cómodo utilizando Git para el control de versiones y siempre busco mejorar mis habilidades técnicas para aportar soluciones útiles. Cuento con nivel de inglés B2 certificado.
                     </p>
                 </div>
             </div>
         </section>
 
         <section id="tecnologias" class="technologies">
-            <h2>Stack Tecnológico</h2>
+            <h2 data-i18n="tech-title">Stack Tecnológico</h2>
             <div class="tech-grid">
                 <div class="tech-item" title="JavaScript">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="64" height="64" alt="JavaScript">
@@ -97,19 +106,19 @@
         </section>
 
         <section id="proyectos" class="projects">
-            <h2>Proyectos Destacados</h2>
+            <h2 data-i18n="projects-title">Proyectos</h2>
             <div class="project-grid">
 
                 <div class="project-card">
                     <img src="https://www.mardedulces.com/img/bolsitas/bolsita-50-dulces.png" alt="Sistema de Pedidos">
                     <div class="project-content">
-                        <h3>Plataforma E-commerce</h3>
-                        <p>
+                        <h3 data-i18n="proj1-title">Plataforma E-commerce</h3>
+                        <p data-i18n="proj1-desc">
                         Carrito de compras funcional con JavaScript. 
                         Incluye cálculo dinámico de totales y actualización en tiempo real del DOM.
                         </p>
                         <div class="project-links">
-                            <a href="https://leafy-baklava-6ce24d.netlify.app/" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                            <a href="https://leafy-baklava-6ce24d.netlify.app/" class="btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="btn-demo">Ver Demo</a>
                             <a href="https://github.com/angelmtz13/dulceria" class="github-link" target="_blank" rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/></svg>
                             </a>
@@ -121,10 +130,10 @@
                  <div class="project-card">
                     <img src="https://i.blogs.es/3c2074/mejores-juegos-estrategia-2022/1366_2000.jpeg" alt="Filtrado de Datos">
                     <div class="project-content">
-                        <h3>Catálogo de Juegos</h3>
-                        <p>Aplicacion web con filtrado dinámico y persistencia de datos mediante LocalStorage, permitiendo mantener preferencias del usuario incluso después de cerrar la sesión.</p>
+                        <h3 data-i18n="proj2-title">Catálogo de Juegos</h3>
+                        <p data-i18n="proj2-desc">Aplicacion web con filtrado dinámico y persistencia de datos mediante LocalStorage, permitiendo mantener preferencias del usuario incluso después de cerrar la sesión.</p>
                         <div class="project-links">
-                            <a href="https://ornate-souffle-2d45e3.netlify.app/" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                            <a href="https://frabjous-pegasus-a00c37.netlify.app/" class="btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="btn-demo">Ver Demo</a>
                             <a href="https://github.com/angelmtz13/juegos.git" class="github-link" target="_blank" rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/></svg>
                             </a>
@@ -135,25 +144,11 @@
                 <div class="project-card">
                     <img src="https://7723998.fs1.hubspotusercontent-na1.net/hubfs/7723998/Gesti%C3%B3n%20de%20Usuarios%20y%20Permisos%20en%20Windows%20365.png" alt="Gestión de Usuarios">
                     <div class="project-content">
-                        <h3>Gestión de Usuarios</h3>
-                        <p>CRUD funcional desarrollado con JavaScript Vanilla. Implementa Fetch API para consumo de datos y persistencia en LocalStorage.</p>
+                        <h3 data-i18n="proj3-title">Gestión de Usuarios</h3>
+                        <p data-i18n="proj3-desc">CRUD funcional desarrollado con JavaScript Vanilla. Implementa Fetch API para consumo de datos y persistencia en LocalStorage.</p>
                         <div class="project-links">
-                            <a href="https://stellular-croquembouche-e69dd7.netlify.app/" class="btn-secondary" target="_blank">Ver Demo</a>
+                            <a href="https://stellular-croquembouche-e69dd7.netlify.app/" class="btn-secondary" target="_blank" data-i18n="btn-demo">Ver Demo</a>
                             <a href="https://github.com/angelmtz13/crud.git" class="github-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSayiz4He1hA_qAY32NWie4qlJInUe9MYqehDy-bqoKuiS9tnYYnvLP1SgkQoClUhD9x5o&usqp=CAU" alt="Consumo de API">
-                    <div class="project-content">
-                        <h3>Traductor</h3>
-                        <p>Aplicación web que consume una API externa de traducción en tiempo real, procesando y renderizando respuestas JSON de forma dinámica en el DOM.</p>
-                        <div class="project-links">
-                            <a href="https://resplendent-biscuit-192b16.netlify.app/" class="btn-secondary" target="_blank">Ver Demo</a>
-                            <a href="https://github.com/angelmtz13/traductor" class="github-link" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/></svg>
                             </a>
                         </div>
@@ -163,10 +158,10 @@
                 <div class="project-card">
                     <img src="https://preview.redd.it/must-watch-tv-shows-my-top-20-v0-kg2bb8ecs0v91.png?auto=webp&s=cc652fd84a20dcd469eb3ed8fa05c79861af271a" alt="Buscador de Series">
                     <div class="project-content">
-                        <h3>Buscador de Series</h3>
-                        <p>Aplicación web para búsqueda de películas y series mediante consumo de API REST. Interfaz responsiva desarrollada con Bootstrap y manipulación dinámica del DOM.</p>
+                        <h3 data-i18n="proj4-title">Buscador de Series</h3>
+                        <p data-i18n="proj4-desc">Aplicación web para búsqueda de películas y series mediante consumo de API REST. Interfaz responsiva desarrollada con Bootstrap y manipulación dinámica del DOM.</p>
                         <div class="project-links">
-                            <a href="https://amazing-monstera-b68ba5.netlify.app/" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                            <a href="https://amazing-monstera-b68ba5.netlify.app/" class="btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="btn-demo">Ver Demo</a>
                             <a href="https://github.com/angelmtz13/pelis" class="github-link" target="_blank" rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/></svg>
                             </a>
@@ -174,50 +169,11 @@
                     </div>
                 </div>
 
-                 <div class="project-card">
-                    <img src="https://creativegroup-blog-prd-eu-west-1-recharge-blog.s3.eu-west-1.amazonaws.com/blog/wp-content/uploads/2023/05/02130156/Random-password-generators-Pros-cons-and-the-best-ones__RE.jpg" alt="Generador de Contraseñas">
-                    <div class="project-content">
-                        <h3>Generador de Contraseñas</h3>
-                        <p>
-                        Generador de contraseñas con JavaScript que evalúa la seguridad en tiempo real. 
-                        Implementa lógica condicional para validar complejidad y mostrar el nivel de seguridad.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://resplendent-wisp-c77b63.netlify.app/" class="btn-secondary" target="_blank">Ver Demo</a>
-                            <a href="https://github.com/angelmtz13/contrasena.git" class="github-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="foto/dash.png" alt="Dashboard Población Mundial">
-                    <div class="project-content">
-                        <h3>Análisis Global (Power BI)</h3>
-                        <p>Dashboard interactivo en Power BI con visualización de datos de población mundial. Incluye segmentación por regiones y gráficas comparativas para facilitar la toma de decisiones..</p>
-                        <div class="project-links">
-                            <a href="foto/dash.png" class="btn-secondary" target="_blank">Ver Proyecto</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="foto/dashboard.png" alt="Dashboard de Ventas Power BI">
-                    <div class="project-content">
-                        <h3>Dashboard de Ventas</h3>
-                        <p>Reporte de métricas de ventas con segmentación por regiones y filtros dinámicos. Enfoque en la interpretación visual de tendencias.</p>
-                        <div class="project-links">
-                            <a href="foto/dashboard.png" class="btn-secondary" target="_blank">Ver Proyecto</a>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="project-card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3G3l6_NIrJ0GdIm1TMu7M22Y64a-4Mw-alg&s" alt="Portafolio Personal">
                     <div class="project-content">
-                        <h3>Diseño de Portafolio Web</h3>
-                        <p>Maquetación semántica y diseño de marca personal. Enfoque en código limpio, arquitectura CSS moderna y experiencia de usuario optimizada.</p>
+                        <h3 data-i18n="proj6-title">Diseño de Portafolio Web</h3>
+                        <p data-i18n="proj6-desc">Maquetación semántica y diseño de marca personal. Enfoque en código limpio, arquitectura CSS moderna y experiencia de usuario optimizada.</p>
                         <div class="project-links">
                             <a href="https://github.com/angelmtz13/portafolio.git" class="github-link" target="_blank" rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="github-icon" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 1 16 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -229,65 +185,65 @@
         </section>
         
         <section id="certificados" class="projects">
-            <h2>Certificaciones Profesionales</h2>
+            <h2 data-i18n="certs-title">Certificaciones Profesionales</h2>
             <div class="certificate-grid">
 
                 <div class="certificate-card">
                     <div class="project-content">
-                        <h3>Desarrollador Front-end</h3>
-                        <p>Emitido por: <strong>EBAC</strong></p>
+                        <h3 data-i18n="cert-frontend">Desarrollador Front-end</h3>
+                        <p><span data-i18n="issued-by">Emitido por:</span> <strong>EBAC</strong></p>
                         <div class="project-links">
-                            <a href="Certificados/ebac-front.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
+                            <a href="Certificados/ebac-front.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="btn-certificate">Ver Certificado</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="certificate-card">
                     <div class="project-content">
-                        <h3>Desarrollador Front-end</h3>
-                        <p>Emitido por: <strong>Fundación Carlos Slim</strong></p>
+                        <h3 data-i18n="cert-frontend">Desarrollador Front-end</h3>
+                        <p><span data-i18n="issued-by">Emitido por:</span> <strong>Fundación Carlos Slim</strong></p>
                         <div class="project-links">
-                            <a href="Certificados/capacitate-front.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
+                            <a href="Certificados/capacitate-front.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="btn-certificate">Ver Certificado</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="certificate-card">
                     <div class="project-content">
-                        <h3>EF SET English Certificate (B2)</h3>
-                        <p>Emitido por: <strong>EF SET</strong></p>
+                        <h3 data-i18n="cert-english">EF SET English Certificate (B2)</h3>
+                        <p><span data-i18n="issued-by">Emitido por:</span> <strong>EF SET</strong></p>
                         <div class="project-links">
-                            <a href="Certificados/EFSETCertificate.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
+                            <a href="Certificados/EFSETCertificate.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="btn-certificate">Ver Certificado</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="certificate-card">
                     <div class="project-content">
-                        <h3>Sitios Web Responsivos</h3>
-                        <p>Emitido por: <strong>Fundación Carlos Slim</strong></p>
+                        <h3 data-i18n="cert-responsive">Sitios Web Responsivos</h3>
+                        <p><span data-i18n="issued-by">Emitido por:</span> <strong>Fundación Carlos Slim</strong></p>
                         <div class="project-links">
-                            <a href="Certificados/responsivo-cap.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
+                            <a href="Certificados/responsivo-cap.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="btn-certificate">Ver Certificado</a>
                         </div>
                     </div>
                 </div>
 
                  <div class="certificate-card">
                     <div class="project-content">
-                        <h3>Control de Versiones (Git)</h3>
-                        <p>Emitido por: <strong>Fundación Carlos Slim</strong></p>
+                        <h3 data-i18n="cert-git">Control de Versiones (Git)</h3>
+                        <p><span data-i18n="issued-by">Emitido por:</span> <strong>Fundación Carlos Slim</strong></p>
                         <div class="project-links">
-                            <a href="Certificados/version-controles.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
+                            <a href="Certificados/version-controles.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="btn-certificate">Ver Certificado</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="certificate-card"> 
                     <div class="project-content">
-                        <h3>Analista de Datos</h3>
-                        <p>Emitido por: <strong>Fundación Carlos Slim</strong></p>
+                        <h3 data-i18n="cert-data">Analista de Datos</h3>
+                        <p><span data-i18n="issued-by">Emitido por:</span> <strong>Fundación Carlos Slim</strong></p>
                         <div class="project-links">
-                            <a href="Certificados/analista-datos.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
+                            <a href="Certificados/analista-datos.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="btn-certificate">Ver Certificado</a>
                         </div>
                     </div>
                 </div>
@@ -296,26 +252,26 @@
         </section>
 
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 data-i18n="contact-title">Contacto</h2>
             <form class="contact-form" action="https://formspree.io/f/mrbyaqkn" method="POST">
-                <input type="text" name="name" placeholder="Tu Nombre" required>
-                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                <textarea name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
-                <button type="submit" class="btn">Enviar Mensaje</button>
+                <input type="text" name="name" placeholder="Tu Nombre" required data-i18n-placeholder="contact-name">
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required data-i18n-placeholder="contact-email">
+                <textarea name="message" rows="5" placeholder="Tu Mensaje" required data-i18n-placeholder="contact-message"></textarea>
+                <button type="submit" class="btn" data-i18n="btn-send">Enviar Mensaje</button>
             </form>
         </section>
 
     </main>
     <footer class="footer">
         <ul class="nav-menu">
-            <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
-            <li class="nav-item"><a href="#sobre-mi" class="nav-link">Perfil</a></li>
-            <li class="nav-item"><a href="#tecnologias" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
-            <li class="nav-item"><a href="#certificados" class="nav-link">Certificados</a></li>
-            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            <li class="nav-item"><a href="#inicio" class="nav-link" data-i18n="nav-home">Inicio</a></li>
+            <li class="nav-item"><a href="#sobre-mi" class="nav-link" data-i18n="nav-profile">Perfil</a></li>
+            <li class="nav-item"><a href="#tecnologias" class="nav-link" data-i18n="nav-skills">Skills</a></li>
+            <li class="nav-item"><a href="#proyectos" class="nav-link" data-i18n="nav-projects">Proyectos</a></li>
+            <li class="nav-item"><a href="#certificados" class="nav-link" data-i18n="nav-certificates">Certificados</a></li>
+            <li class="nav-item"><a href="#contacto" class="nav-link" data-i18n="nav-contact">Contacto</a></li>
         </ul>
-        <p style="text-align: center; color: var(--text-gray); margin-top: 20px;">2026 Angel Martinez.</p>
+        <p style="text-align: center; color: var(--text-gray); margin-top: 20px;"><span data-i18n="footer-text">2026 Angel Martinez.</span></p>
     </footer>
     <script src="script.js"></script>
 </body>
