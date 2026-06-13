@@ -164,10 +164,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const langText = document.getElementById('lang-text');
             if (langText) {
-                langText.textContent = lang === 'es' ? 'EN' : 'ES';
+                langText.textContent = lang === 'es' ? 'ES' : 'EN';
             }
 
-            localStorage.setItem('portfolio_lang', lang);
+            localStorage.setItem('portfolio_lang_v2', lang);
         };
 
         const mainElement = document.querySelector('main');
@@ -185,14 +185,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const langToggleBtn = document.getElementById('lang-toggle');
     if (langToggleBtn) {
         langToggleBtn.addEventListener('click', () => {
-            const currentLang = localStorage.getItem('portfolio_lang') || 'es';
+            const currentLang = localStorage.getItem('portfolio_lang_v2') || 'es';
             const nextLang = currentLang === 'es' ? 'en' : 'es';
             setLanguage(nextLang);
         });
     }
 
     // Initialize Language
-    const savedLang = localStorage.getItem('portfolio_lang') || 'es';
+    const savedLang = localStorage.getItem('portfolio_lang_v2') || 'es';
     setLanguage(savedLang, true);
 
     // --- FORMULARIO DE CONTACTO ---
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (form) {
         form.addEventListener("submit", async (e) => {
             e.preventDefault();
-            const currentLang = localStorage.getItem('portfolio_lang') || 'es';
+            const currentLang = localStorage.getItem('portfolio_lang_v2') || 'es';
             try {
                 const response = await fetch(form.action, {
                     method: form.method,
