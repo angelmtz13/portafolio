@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 langText.textContent = lang === 'es' ? 'EN' : 'ES';
             }
 
-            localStorage.setItem('lang', lang);
+            localStorage.setItem('portfolio_lang', lang);
         };
 
         const mainElement = document.querySelector('main');
@@ -185,14 +185,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const langToggleBtn = document.getElementById('lang-toggle');
     if (langToggleBtn) {
         langToggleBtn.addEventListener('click', () => {
-            const currentLang = localStorage.getItem('lang') || 'es';
+            const currentLang = localStorage.getItem('portfolio_lang') || 'es';
             const nextLang = currentLang === 'es' ? 'en' : 'es';
             setLanguage(nextLang);
         });
     }
 
     // Initialize Language
-    const savedLang = localStorage.getItem('lang') || 'es';
+    const savedLang = localStorage.getItem('portfolio_lang') || 'es';
     setLanguage(savedLang, true);
 
     // --- FORMULARIO DE CONTACTO ---
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (form) {
         form.addEventListener("submit", async (e) => {
             e.preventDefault();
-            const currentLang = localStorage.getItem('lang') || 'es';
+            const currentLang = localStorage.getItem('portfolio_lang') || 'es';
             try {
                 const response = await fetch(form.action, {
                     method: form.method,
