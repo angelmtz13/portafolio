@@ -1,30 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    const applyTheme = () => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            body.classList.add('dark-theme');
-            themeToggle.checked = true;
-        } else {
-            body.classList.remove('dark-theme');
-            themeToggle.checked = false;
-        }
-    };
-
-    const toggleTheme = () => {
-        if (themeToggle.checked) {
-            body.classList.add('dark-theme');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            body.classList.remove('dark-theme');
-            localStorage.setItem('theme', 'light');
-        }
-    };
-
-    themeToggle.addEventListener('change', toggleTheme);
-    applyTheme();
 
     // --- LOGICA DE TRADUCCION (i18n) ---
     const translations = {
