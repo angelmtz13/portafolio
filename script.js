@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const translations = {
         es: {
             "title": "Portafolio | Angel Martinez",
-            "meta-desc": "Portafolio profesional de Angel Martinez, Desarrollador Frontend Jr. Conoce mis proyectos y tecnologías.",
+            "meta-desc": "Portafolio profesional de Angel Martinez, Ingeniero Informático. Conoce mis proyectos y tecnologías.",
             "nav-home": "Inicio",
             "nav-profile": "Perfil",
             "nav-skills": "Skills",
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "nav-certificates": "Certificados",
             "nav-contact": "Contacto",
             "hero-title": "Hola, soy Angel Martinez",
-            "hero-subtitle": "Frontend Developer Jr | JavaScript • HTML • CSS",
+            "hero-subtitle": "Ingeniero Informático | Software • Web • Data",
             "btn-portfolio": "Ver Portafolio",
             "btn-contact-me": "Contáctame",
             "about-title": "Perfil Profesional",
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         en: {
             "title": "Portfolio | Angel Martinez",
-            "meta-desc": "Professional portfolio of Angel Martinez, Junior Frontend Developer. Discover my projects and technologies.",
+            "meta-desc": "Professional portfolio of Angel Martinez, Computer Engineer. Discover my projects and technologies.",
             "nav-home": "Home",
             "nav-profile": "Profile",
             "nav-skills": "Skills",
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "nav-certificates": "Certifications",
             "nav-contact": "Contact",
             "hero-title": "Hello, I'm Angel Martinez",
-            "hero-subtitle": "Junior Frontend Developer | JavaScript • HTML • CSS",
+            "hero-subtitle": "Computer Engineer | Software • Web • Data",
             "btn-portfolio": "View Portfolio",
             "btn-contact-me": "Contact Me",
             "about-title": "Professional Profile",
