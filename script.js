@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "nav-contact": "Contacto",
             "hero-title": "Hola, soy Angel Martinez",
             "hero-subtitle": "Ingeniero Informático | Software • Web",
+            "btn-cv": "Descargar CV",
+            "cv-status": "Actualizado · Listo para descargar o visualizar",
+            "cv-view": "Ver online",
             "btn-portfolio": "Ver Portafolio",
             "btn-contact-me": "Contáctame",
             "about-title": "Perfil Profesional",
@@ -72,6 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "nav-contact": "Contact",
             "hero-title": "Hello, I'm Angel Martinez",
             "hero-subtitle": "Computer Engineer | Software • Web",
+            "btn-cv": "Download CV",
+            "cv-status": "Updated · Ready to download or view",
+            "cv-view": "View online",
             "btn-portfolio": "View Portfolio",
             "btn-contact-me": "Contact Me",
             "about-title": "Professional Profile",
@@ -157,7 +163,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 langText.textContent = lang === 'es' ? 'ES' : 'EN';
             }
 
-            localStorage.setItem('portfolio_lang_v2', lang);
+            try {
+                localStorage.setItem('portfolio_lang_v2', lang);
+            } catch (e) {}
         };
 
         const mainElement = document.querySelector('main');
@@ -172,18 +180,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    let currentLanguage = 'es';
+    try {
+        currentLanguage = localStorage.getItem('portfolio_lang_v2') || 'es';
+    } catch (e) {
+        currentLanguage = 'es';
+    }
+
     const langToggleBtn = document.getElementById('lang-toggle');
     if (langToggleBtn) {
         langToggleBtn.addEventListener('click', () => {
-            const currentLang = localStorage.getItem('portfolio_lang_v2') || 'es';
-            const nextLang = currentLang === 'es' ? 'en' : 'es';
-            setLanguage(nextLang);
+            currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
+            setLanguage(currentLanguage);
         });
     }
 
     // Initialize Language
-    const savedLang = localStorage.getItem('portfolio_lang_v2') || 'es';
-    setLanguage(savedLang, true);
+    setLanguage(currentLanguage, true);
 
     // --- FORMULARIO DE CONTACTO ---
     const form = document.querySelector(".contact-form");
