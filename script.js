@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "exp1-task3": "Soporte técnico a usuarios institucionales y resolución de incidentes de autenticación.",
             "tech-title": "Stack Tecnológico",
             "projects-title": "Proyectos Destacados",
+            "proj-phishing-title": "Dashboard de Análisis de Phishing",
+            "proj-phishing-desc": "Herramienta interactiva para el análisis en tiempo real de correos electrónicos sospechosos y enlaces URL orientada a la detección de riesgos de ciberseguridad.",
             "proj1-title": "Plataforma E-commerce",
             "proj1-desc": "Carrito de compras funcional con JavaScript. Incluye cálculo dinámico de totales y actualización en tiempo real del DOM.",
             "proj2-title": "Biblioteca de Juegos",
@@ -93,6 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "exp1-task3": "Technical support for institutional users and resolution of authentication incidents.",
             "tech-title": "Tech Stack",
             "projects-title": "Featured Projects",
+            "proj-phishing-title": "Phishing Analysis Dashboard",
+            "proj-phishing-desc": "Interactive dashboard showcasing examples of phishing attempts identified in institutional emails, with URL analysis to illustrate potential cybersecurity risks.",
             "proj1-title": "E-commerce Platform",
             "proj1-desc": "Functional shopping cart built with JavaScript. Includes dynamic calculation of totals and real-time DOM updates.",
             "proj2-title": "Video Games Library",
@@ -165,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 localStorage.setItem('portfolio_lang_v2', lang);
-            } catch (e) {}
+            } catch (e) { }
         };
 
         const mainElement = document.querySelector('main');
